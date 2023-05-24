@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+
+*,::after,::before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+html{
+    font-family: 'DM Sans', sans-serif;
+}
+
+body{
+background: #FF416C;  
+background: -webkit-linear-gradient(to right, #FF4B2B, #FF416C);  
+background: linear-gradient(to right, #FF4B2B, #FF416C);
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+.login-main{
+    width: 95%;
+    margin: auto;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 8px;
+    height: 600px;
+    position: relative;
+    transition: 250ms ease;
+    
+}
+
+h3{
+    text-align: center;
+    padding-bottom: 1rem;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.input-div{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    position: relative;
+}
+
+input{
+    margin-block-end: 2rem;
+    padding: 1rem;
+    border-radius: 8px;
+    border: 2px solid #FF416C;
+    transition: 100ms ease;
+}
+
+input:focus{
+    border: 3px solid #FF4B2B;
+}
+
+input:focus-visible{
+    outline: none;
+}
+
+input::placeholder{
+    font-size: 1rem;
+    opacity: .6;
+}
+
+.input-div::before{
+    content: "Email";
+    position: absolute;
+    color: black;
+    top: -10px;
+    left: 16px;
+    font-size: 1rem;
+    background: white;
+}
+
+.input-div::after{
+    content: "Password";
+    position: absolute;
+    color: black;
+    bottom:73px;
+    left: 16px;
+    font-size: 1rem;
+    background: white;
+}
+
+.btn-div{
+    width: 100%;
+    margin: 2rem auto;
+    position: absolute;
+    left: 0;
+    top: auto;
+    bottom: auto;
+    right: auto;
+}
+           
+.btn {
+            background-image: linear-gradient(to right, #02AAB0 0%, #00CDAC  51%, #02AAB0  100%);
+            margin: 10px;
+            padding: 10px 25px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+            font-size:1rem ;
+            border: 1px solid #02AAB0;
+            display: block;
+           margin: auto;
+           cursor: pointer;
+          }
+
+.btn:hover {
+            background-position: right center; /* change the direction of the change here */
+            color: #fff;
+            text-decoration: none;
+          }
+         
+
+@media(min-width:425px){
+    .login-main{
+    width: 70%;
+}
+
+}
+
+
+@media(min-width:634px){
+    .login-main{
+    width: 50%;
+}
+
+}
+
+@media(min-width:922px){
+    .login-main{
+    width: 40%;
+}
+
+}
+
+
+@media(min-width:1307px){
+    .login-main{
+    width: 35%;
+}
+
+}
