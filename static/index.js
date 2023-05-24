@@ -33,4 +33,5 @@ button.addEventListener("mouseover", () => {
 
 button.addEventListener("click", () => {
   alert("You Got Me 😊");
+  window.location.reload();
 });
